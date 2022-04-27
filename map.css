@@ -1,3 +1,14 @@
 body {
-    
+   background-color: #f280A1;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font: 100;
 }
