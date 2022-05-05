@@ -8,6 +8,7 @@ header {
 
 input {
     text-align: center;
+    position: fixed; top: 100px; left: 650px;
 }
 
 h1 {

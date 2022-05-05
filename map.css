@@ -4,11 +4,16 @@ body {
 }
 
 header {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;
 }
 
 h1 {
     text-align: center;
     color: black;
     font: 100;
+}
+
+object {
+    height: 1100px;
+    width: 1600px;
 }
