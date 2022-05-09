@@ -8,7 +8,7 @@ header {
 
 input {
     text-align: center;
-    position: fixed; top: 100px; left: 650px;
+    position: relative; left: 650px;
 }
 
 h1 {
@@ -16,4 +16,71 @@ h1 {
     text-align: center;
     font-size: large;
 
+}
+#McDonald,#Max,#Subway{
+    margin-top: 40px;
+}
+#category-name{
+    margin: 10px;
+    font-size: 35px;
+    color:steelblue;
+    position: relative; left: 400px;
+}
+#item-card{
+    width: 180px;
+    height: 220px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background: rgb(253, 221, 226);
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    position: relative; left: 400px;
+}
+#item-card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+    transition: 0.5s all ease-in-out;
+}
+#item-card img:hover{
+    transform: scale(1.1);
+}
+#card-top{
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+}
+#rating{
+    padding: 7px;
+    color: seagreen;
+    background: silver;
+    font-size: 14px;
+    border-radius: 14px;
+}
+.fa-cart-plus{
+    padding: 6px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.toggle-cart{
+    background: orangered;
+    color: white;
+}
+#item-name{
+    margin: 5px 0;
+    font-weight: 600;
+    color: darkslategray;
+    font-size: 18px;
+}
+#item-price{
+    margin: 0;
+    font-weight: 5;
+    color: darkslategray;
+    font-size: 15px;
 }
