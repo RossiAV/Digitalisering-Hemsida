@@ -1,3 +1,9 @@
+head  {
+    background-color: beige;
+    
+}
+
+
 body {
    background-color: #f280A1;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -5,6 +11,7 @@ body {
 
 header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aliceblue;
 }
 
 h1 {
@@ -12,3 +19,22 @@ h1 {
     color: black;
     font: 100;
 }
+
+.menuPanel {
+    box-sizing: border-box;
+    background-color: beige;
+    width: 10%;
+    height: 80%;
+    border-top: 5%;
+    align-content: space-around;
+
+
+}
+
+ul {
+    border-top: 5%;
+    vertical-align: middle;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style:none;
+}
+
