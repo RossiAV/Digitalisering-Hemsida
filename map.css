@@ -10,8 +10,7 @@ body {
 }
 
 header {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;
 }
 
 h1 {
@@ -20,21 +19,7 @@ h1 {
     font: 100;
 }
 
-.menuPanel {
-    box-sizing: border-box;
-    background-color: beige;
-    width: 10%;
-    height: 80%;
-    border-top: 5%;
-    align-content: space-around;
-
-
+object {
+    height: 1100px;
+    width: 1600px;
 }
-
-ul {
-    border-top: 5%;
-    vertical-align: middle;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    list-style:none;
-}
-

@@ -1,19 +1,78 @@
 <!DOCTYPE HTML>
-<HTML>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DroneFood</title>
-    <link rel="stylesheet" href="style.css">
-    <header>DroneFood Inc.</header>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DroneFood</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <header>DroneFood Inc.</header>
+  <style>
+    .GFG {
+        background-color: rgb(153, 102, 204);
+        border: 2px solid black;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        margin: 10px 30px;
+        cursor: pointer;
+        position:relative; right: 100px;
+    }
+  </style>
   </head>
     <body>
-        <h1>Where would you like us to deliver your food?</h1>
-        <input type="text" id="Adress" name="Adress">
-	<script src="index.js"></script>
-  </body>
-    </head>
+      <h1>Where would you like us to deliver your food?</h1>
+      <input type="text" id="Adress" name="Adress">
+      <a href="map.html">
+        <button class="GFG">
+            StartSida
+        </button>
+      </a>
 
 
+	  <script src="index.js"></script>
+    </body>
+  </head>
+    <div id="mat">
+      <div id="McDonald">
+        <p id="category-name">McDonald's</p>
+        <div id="item-card">
+          <div id="card-top">
+              <i class="fa-solid fa-star" id="rating"> 3 . 5</i>
+              <i class="fa-solid fa-cart-plus"></i>
+          </div>
+          <img src="Images/McDonalds.jpeg" alt=""> 
+          <p id="item-name">Burgare</p>
+          <p id="item-price">Prisklass: 2/5</p>
+        </div>
+
+      </div>
+
+      <div id="Max">
+        <p id="category-name">Max Hamburgare</p>
+        <div id="item-card">
+          <div id="card-top">
+            <i class="fa-solid fa-star" id="rating"> 4 . 0</i>
+            <i class="fa-solid fa-cart-plus"></i>
+          </div>
+          <img src="Images/Max.png"> 
+          <p id="item-name">Burgare</p>
+          <p id="item-price">Prisklass: 2/5</p>
+        </div>
+      </div>
+      <div id="Subway">
+        <p id="category-name">Subway</p>
+        <div id="item-card">
+          <div id="card-top">
+            <i class="fa-solid fa-star" id="rating"> 3 . 0</i>
+            <i class="fa-solid fa-cart-plus"></i>
+          </div>
+          <img src="Images/Subway.png"> 
+          <p id="item-name">Mackor</p>
+          <p id="item-price">Prisklass: 2/5</p>
+        </div>
+      </div>
+    </div>
 </HTML>

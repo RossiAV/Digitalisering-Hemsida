@@ -6,17 +6,33 @@
     <title>DroneFood</title>
     <link rel="stylesheet" href="map.css">
     <header>DroneFood Inc.</header>
-    <h1>We are working on your order!</h1>
+    <style>
+        .GFG {
+            background-color: rgb(153, 102, 204);
+            border: 2px solid black;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            margin: 10px 30px;
+            cursor: pointer;
+            position:fixed; left:30px; top:200px;
+        }
+    </style>
     </head>
     <body>
-        <div class="menuPanel">
-            <ul>
-                <li>Account</li>
-                <li>Payment</li>
-                <li>Help</li>
-            </ul>
-            
+        <h1>We are working on your order!</h1>
+        <div style = "position:fixed; left:150px; top:10px; background-color:0xF280A1;">
+            <object id="map" data="images/lund-map.svg" type="image/svg+xml" ></object>
         </div>
+
+        <a href="index.html">
+            <button class="GFG">
+                StartSida
+            </button>
+        </a>
+ 
     </body>
     
 </HTML>
