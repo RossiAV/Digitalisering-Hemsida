@@ -1,11 +1,11 @@
 head  {
-    background-color: beige;
+    background-color: antiquewhite;
     
 }
 
 
 body {
-   background-color: #f280A1;
+   background-color: antiquewhite;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -16,7 +16,7 @@ header {
 h1 {
     text-align: center;
     color: black;
-    font: 100;
+    font-size: 52;
 }
 
 object {
