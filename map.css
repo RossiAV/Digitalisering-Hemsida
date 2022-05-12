@@ -1,5 +1,11 @@
+head  {
+    background-color: antiquewhite;
+    
+}
+
+
 body {
-   background-color: #f280A1;
+   background-color: antiquewhite;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -10,10 +16,21 @@ header {
 h1 {
     text-align: center;
     color: black;
-    font: 100;
+    font-size: 52;
 }
 
 object {
-    height: 1100px;
-    width: 1600px;
+    height: 1000px;
+    width: 1000px;
 }
+
+.menu {
+             
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     
+    
+}
+
+
+
