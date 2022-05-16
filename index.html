@@ -36,7 +36,20 @@
     </body>
   </head>
   <div id="Kundkorg">Kundkorg</div>
-  <div id="box" style="width:200px;height:500px;border:1px solid #000;"></div>
+  <div id="box" style="width:200px;height:500px;border:1px solid #000;">
+    <div id="slot1" value="0" style="width:180px;height:150px;border:1px solid #000;">
+          
+    </div>
+    <div id="slot2" style="width:180px;height:150px;border:1px solid #000;">
+
+    </div>
+    <div id="slot3" value="0" style="width:180px;height:150px;border:1px solid #000;">
+      <form id="form">
+        <input type="image" id="number" value="0"/>
+        <input type="button" onclick="test2()" value="Lägg till" id="knapp" />
+     </form>
+    </div>
+  </div>
     <div id="mat">
       <div id="McDonald">
         <p id="category-name">McDonald's</p>
@@ -71,7 +84,7 @@
             <i class="fa-solid fa-star" id="rating"> 3 . 0</i>
             <i class="fa-solid fa-cart-plus"></i>
           </div>
-          <img src="Images/Subway.png"> 
+          <img src="Images/Subway.png" id="sub" onclick=test2()> 
           <p id="item-name">Mackor</p>
           <p id="item-price">Prisklass: 2/5</p>
         </div>

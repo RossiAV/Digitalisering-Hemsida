@@ -92,3 +92,9 @@ h1 {
 #Kundkorg{
     position: relative; left: 1200px;
 }
+#number{
+    position: relative; left: 10px;
+}
+#knapp{
+    position: relative; left: 10px;
+}
