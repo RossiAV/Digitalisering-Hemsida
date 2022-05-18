@@ -36,26 +36,27 @@
     </body>
   </head>
   <div id="Kundkorg">Kundkorg</div>
-  <div id="box" style="width:200px;height:500px;border:1px solid #000;">
-    <div id="slot1" value="0" style="width:180px;height:150px;border:1px solid #000;">
+  <div id="box" style="width:200px;height:540px;border:1px solid #000;">
+    <div id="slot1" value="0" style="width:200px;height:178px;border:1px solid #000;">
       <form id="form1">
         <input id="number1" value="0"/>
         <input type="button" onclick="test1()" value="Lägg till" id="knapp1" />
      </form>
     </div>
-    <div id="slot2" style="width:180px;height:150px;border:1px solid #000;">
+    <div id="slot2" style="width:200px;height:178px;border:1px solid #000;">
       <form id="form2">
         <input id="number2" value="0"/>
         <input type="button" onclick="test2()" value="Lägg till" id="knapp2" />
      </form>
     </div>
-    <div id="slot3" value="0" style="width:180px;height:150px;border:1px solid #000;">
-      <form id="form3">
-        <input id="number" value="0"/>
-        <input type="button" onclick="test3()" value="Lägg till" id="knapp3" />
-     </form>
+    <div id="slot3" value="0" style="width:200px;height:179px;border:1px solid #000;"></div>
+    
+    <form id="form3">
+      <input id="number" value="0"/>
+      <input type="button" onclick="test3()" value="Lägg till" id="knapp3" />
+    </form> 
      
-    </div>
+    
   </div>
     <div id="mat">
       <div id="McDonald">
@@ -65,11 +66,23 @@
               <i class="fa-solid fa-star" id="rating"> 3 . 5</i>
               <i class="fa-solid fa-cart-plus"></i>
           </div>
-          <img id="donk" src="Images/McDonalds.jpeg" onclick=test()> 
+          <img id="donk" src="Images/McDonalds.jpeg" onclick=hidetest()> 
           <p id="item-name">Burgare</p>
           <p id="item-price">Prisklass: 2/5</p>
         </div>
 
+      </div>
+
+      <div id="meny1">
+        <div id="menykort">
+          <p id="mcmeny">McDonald's Meny</p>
+          <img id="mc-burgare" src="Images\mcd-burgare.jpg" onclick=test()>
+          <img id="mc-pommes" src="Images\mcd-pommes.jpg">
+          <img id="mc-läsk" src="Images\mcd-läsk.jpg">
+          <p id="mcd-burgare">Mc-Feast</p>
+          <p id="mcd-pommes">Mc-pommes</p>
+          <p id="mcd-läsk">Mc-läsk</p>
+        </div>
       </div>
 
       <div id="Max">
@@ -79,23 +92,49 @@
             <i class="fa-solid fa-star" id="rating"> 4 . 0</i>
             <i class="fa-solid fa-cart-plus"></i>
           </div>
-          <img id="MaxHamburgare" src="Images/Max.png"> 
+          <img id="MaxHamburgare" src="Images/Max.png" onclick="hidetest2()"> 
           <p id="item-name">Burgare</p>
           <p id="item-price">Prisklass: 2/5</p>
         </div>
       </div>
-      <div id="Subway">
+
+      <div id="meny2">
+        <div id="menykort2">
+          <p id="maxmeny">Max Meny</p>
+          <img id="max-burgare" src="Images\max-burgare.png" onclick=test()>
+          <img id="max-pommes" src="Images\MaxPommes.png">
+          <img id="max-läsk" src="Images\max-läsk.png">
+          <p id="maxburgare">Max Orginal</p>
+          <p id="maxpommes">Max pommes</p>
+          <p id="maxläsk">Max läsk</p>
+        </div>
+      </div>
+
+      <div id="Burger King">
         <p id="category-name">Subway</p>
         <div id="item-card">
           <div id="card-top">
             <i class="fa-solid fa-star" id="rating"> 3 . 0</i>
             <i class="fa-solid fa-cart-plus"></i>
           </div>
-          <img src="Images/Subway.png" id="sub" onclick=test2()> 
-          <p id="item-name">Mackor</p>
+          <img src="Images/Burger-King.png" id="sub" onclick=hidetest3()> 
+          <p id="item-name">Burgare</p>
           <p id="item-price">Prisklass: 2/5</p>
         </div>
       </div>
+
+      <div id="meny3">
+        <div id="menykort3">
+          <p id="BKmeny">BK Meny</p>
+          <img id="BK-burgare" src="Images\WHOPPER.jpg" onclick=test()>
+          <img id="BK-pommes" src="Images\BK-pommes.jpg">
+          <img id="BK-läsk" src="Images\mcd-läsk.jpg">
+          <p id="BKburgare">BK Whopper</p>
+          <p id="BKpommes">BK pommes</p>
+          <p id="BKläsk">BK läsk</p>
+        </div>
+      </div>
+
     </div>
   <script src="index.js"></script>
 </HTML>

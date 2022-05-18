@@ -100,3 +100,188 @@ h1 {
 }
 
 
+#form3{
+    position: relative; left: 10px; bottom: 80px
+}
+
+#menykort{
+    float: left;
+    width: 200px;
+    height: 250px;
+    padding: 5px;
+    margin: auto;
+    display: block;
+    border-radius: 8px;
+    background:   grey;
+    transition: 0.5s all ease-in-out;
+    position: absolute; bottom: -100px; left: 280px
+}
+#mcmeny{
+    margin: 5px;
+    position: relative; left: 25px;
+}
+#mc-burgare{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+#mc-pommes{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+#mc-läsk{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    display: block;
+    margin-top: 15px;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+
+#mcd-burgare{
+    position: relative; left: 70px; bottom: 190px
+
+}
+#mcd-pommes{
+    position: relative; left: 70px; bottom: 170px
+
+}
+#mcd-läsk{
+    position: relative; left: 70px; bottom: 140px
+
+}
+
+
+#menykort2{
+    float: left;
+    width: 200px;
+    height: 250px;
+    padding: 5px;
+    margin: auto;
+    display: block;
+    border-radius: 8px;
+    background:   grey;
+    transition: 0.5s all ease-in-out;
+    position: absolute; bottom: -100px; left: 560px
+}
+#maxmeny{
+    margin: 5px;
+    position: relative; left: 25px;
+}
+#max-burgare{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+#max-pommes{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+#max-läsk{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    display: block;
+    margin-top: 15px;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+
+#maxburgare{
+    position: relative; left: 70px; bottom: 190px
+
+}
+#maxpommes{
+    position: relative; left: 70px; bottom: 170px
+
+}
+#maxläsk{
+    position: relative; left: 70px; bottom: 140px
+
+}
+
+#menykort3{
+    float: left;
+    width: 200px;
+    height: 250px;
+    padding: 5px;
+    margin: auto;
+    display: block;
+    border-radius: 8px;
+    background:   grey;
+    transition: 0.5s all ease-in-out;
+    position: absolute; bottom: -100px; left: 860px
+}
+#BKmeny{
+    margin: 5px;
+    position: relative; left: 25px;
+}
+#BK-burgare{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+#BK-pommes{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+#BK-läsk{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    display: block;
+    margin-top: 15px;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+
+#BKburgare{
+    position: relative; left: 70px; bottom: 190px
+
+}
+#BKpommes{
+    position: relative; left: 70px; bottom: 170px
+
+}
+#BKläsk{
+    position: relative; left: 70px; bottom: 140px
+
+}
+
+
+
+
