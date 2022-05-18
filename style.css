@@ -97,7 +97,10 @@ h1 {
 }
 #Kundkorg{
     position: relative; left: 1200px;
-    background-image: "Images/digi.jpg";
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+#number{
+    position: relative; left: 10px;
+}
+#knapp{
+    position: relative; left: 10px;
 }
