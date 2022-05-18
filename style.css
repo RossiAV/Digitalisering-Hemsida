@@ -1,5 +1,7 @@
 body {
-    background-color: antiquewhite;
+    background-image: url("images/dronesSky.jpeg");
+       
+      
 }
 
 header {
@@ -14,7 +16,8 @@ input {
 h1 {
     color: black;
     text-align: center;
-    font-size: large;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 #McDonald,#Max,#Subway{
@@ -26,6 +29,7 @@ h1 {
     font-size: 15px;
     color:steelblue;
     position: relative; bottom: 400px; left: 300px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #item-card{
     float: left;
@@ -35,7 +39,7 @@ h1 {
     margin: auto;
     display: inline-block;
     border-radius: 8px;
-    background: rgb(253, 221, 226);
+    background:   grey;
     transition: 0.5s all ease-in-out;
     position: relative; bottom: 350px; left: 200px;
 }
@@ -77,18 +81,23 @@ h1 {
 #item-name{
     margin: 5px 0;
     font-weight: 600;
-    color: darkslategray;
+    color: whitesmoke;
     font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #item-price{
     margin: 0;
     font-weight: 5;
-    color: darkslategray;
+    color: whitesmoke;
     font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #box{
     position: relative; left: 1200px;
 }
 #Kundkorg{
     position: relative; left: 1200px;
+    background-image: "Images/digi.jpg";
+    background-repeat: no-repeat;
+    background-size: cover;
 }
