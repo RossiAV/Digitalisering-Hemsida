@@ -2,6 +2,10 @@ let test = () => {
     document.getElementById("slot2").innerHTML="<img src='Images/MaxPommes.png' />";
     let ele = document.getElementById('slot2');
     ele.innerHTML += 'Max Pommes';
+    document.getElementById("number2").style.left = '10px';
+    document.getElementById("number2").style.bottom = '80px';
+    document.getElementById("knapp2").style.left = '10px';
+    document.getElementById("knapp2").style.bottom = '80px';
 }
 
 document.getElementById("MaxHamburgare").onclick = function () {
@@ -16,11 +20,27 @@ document.getElementById("MaxHamburgare").onclick = function () {
        document.getElementsByTagName('body')[0].appendChild(div);
 };
 
-function test2(){
-    var value = parseInt(document.getElementById('number').value, 10);
+function test1(){
+    var value = parseInt(document.getElementById('number1').value, 10);
     value = isNaN(value) ? 0 : value;
     value++;
-    document.getElementById('number').value = value;
+    document.getElementById('number1').value = value;
+
+}
+
+function test2(){
+    var value = parseInt(document.getElementById('number2').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number2').value = value;
+
+}
+
+function test3(){
+    var value = parseInt(document.getElementById('number3').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number3').value = value;
 
 }
 /*
