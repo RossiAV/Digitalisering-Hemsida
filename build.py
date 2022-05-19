@@ -1,20 +1,17 @@
-from os import fdopen
-from flask import Flask, render_template, request
-from flask.json import jsonify
+from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
 from flask_cors import CORS
 import time
 import redis
-import pickle
-import json
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, supports_credentials=True)
 app.secret_key = 'dljsaklqk24e21cjn!Ew@@dsa5'
+socket = SocketIO(app, cors_allowed_origins="*")
 
-# change this so that you can connect to your redis server
+# change this so rhat you can connect to your own redis server
 # ===============================================
-redis_server = redis.Redis('localhost', decode_responses=True, charset="unicode_escape")
+redis_server = redis.Redis(host='localhost', port=6379)
 # ===============================================
 
 # Translate OSM coordinate (longitude, latitude) to SVG coordinates (x,y).
@@ -40,32 +37,14 @@ def translate(coords_osm):
 def map():
     return render_template('index.html')
 
-@app.route('/get_drones', methods=['GET'])
-def get_drones():
-    #=============================================================================================================================================
-    # Get the information of all the drones from redis server and update the dictionary `drone_dict' to create the response 
-    # drone_dict should have the following format:
-    # e.g if there are two drones in the system with IDs: DRONE1 and DRONE2
-    # drone_dict = {'DRONE_1':{'longitude': drone1_logitude_svg, 'latitude': drone1_logitude_svg, 'status': drone1_status},
-    #               'DRONE_2': {'longitude': drone2_logitude_svg, 'latitude': drone2_logitude_svg, 'status': drone2_status}
-    #              }
-    # use function translate() to covert the coodirnates to svg coordinates
-    #============================================================================================================================================
-    drone_info1 = redis_server.get("Drone1")
-    drone_infoLoad1 = json.loads(drone_info1)
-    drone_info2 = redis_server.get("Drone2")
-    drone_infoLoad2 = json.loads(drone_info2)
-    
-    print(drone_infoLoad1)
-    
-    coords1 = translate((drone_infoLoad1['longitude'], drone_infoLoad1['latitude']))
-    coords2 = translate((drone_infoLoad2['longitude'], drone_infoLoad2['latitude']))
-        
-    drone_dict = {'Drone1':{'longitude': coords1[0], 'latitude': coords1[1], 'status': drone_infoLoad1['status']},
-                  'Drone2':{'longitude': coords2[0], 'latitude': coords2[1], 'status': drone_infoLoad2['status']}}
-  
-    print(drone_dict)
-    return jsonify(drone_dict)
+@socket.on('get_location')
+def get_location():
+    while True:
+        longitude = float(redis_server.get('longitude'))
+        latitude = float(redis_server.get('latitude'))
+        x_svg, y_svg = translate((longitude, latitude))
+        emit('get_location', (x_svg, y_svg))
+        time.sleep(0.01)
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port='5000')
