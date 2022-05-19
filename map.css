@@ -1,22 +1,71 @@
+@font-face {
+    font-family: 'AstroFont';
+    src: url("Fonts/AstroFont.ttf") format('truetype');
+  }
+
+@font-face {
+    font-family: 'Attraction';
+    src: url("Fonts/Attraction.ttf") format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Lato';
+    src: url("Fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'orbit';
+    src: url("Fonts/OrbitPersonalUseBold-VGDoe.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'mom';
+    src: url("Fonts/MomcakeThin-9Y6aZ.otf");
+}
+
+
+
+
 head  {
-    background-color: antiquewhite;
+    
+
     
 }
 
 
 body {
-   background-color: antiquewhite;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("Images/sky2.jpeg");
+    background-position: top right;
+    background-repeat: no-repeat;
+   
 }
 
 header {
-    font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;
+    font-family: Attraction;
+    position: relative;   
+    font-size: small;
 }
 
 h1 {
     text-align: center;
     color: black;
     font-size: 52;
+    font-family: mom;
+}
+
+.GFG {
+    background-color: grey;
+    border: 2px solid black;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 30px;
+    cursor: pointer;
+    position:fixed; left:30px; top:40px;
+    font-family: Lato;
 }
 
 object {

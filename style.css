@@ -1,7 +1,55 @@
+@font-face {
+    font-family: 'AstroFont';
+    src: url("Fonts/AstroFont.ttf") format('truetype');
+  }
+
+@font-face {
+    font-family: 'Attraction';
+    src: url("Fonts/Attraction.ttf") format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Lato';
+    src: url("Fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'orbit';
+    src: url("Fonts/OrbitPersonalUseBold-VGDoe.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'mom';
+    src: url("Fonts/MomcakeThin-9Y6aZ.otf");
+}
+
+header {
+    font-family: Attraction;
+    position: relative; right: 650px;
+    font-size: small;
+}
+
 body {
-    background-image: url("images/dronesSky.jpeg");
+    background-image: url("images/dronedrawing.jpeg"), url("images/dronesSky.jpeg");
+    background-position: top right, bottom right;
+    background-repeat: no-repeat;
        
       
+}
+
+.GFG {
+    background-color: grey;
+    border: 2px solid black;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 30px;
+    cursor: pointer;
+    position:relative; right: 800px; top:  80px;
+    font-family: Lato;
 }
 
 header {
@@ -10,38 +58,49 @@ header {
 
 input {
     text-align: center;
-    position: relative; left: 650px;
+    position: relative; left: 275px;
+    width:  60%;
+    border: 2px solid grey;
+    height: 20px;
+    margin-top: 2px;
 }
 
 h1 {
+    font-family: orbit;
+    position: relative; 
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
     color: black;
     text-align: center;
-    font-size: larger;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-family: mom;
 
 }
 #McDonald,#Max,#Subway{
-    margin-top: 40px;
+    margin-top: 15px;
 }
 #category-name{
     float: left;
     margin: 5px;
     font-size: 15px;
     color:steelblue;
-    position: relative; bottom: 400px; left: 300px; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative; bottom: 400px; left: 100px; 
+    font-family: Lato;
 }
 #item-card{
     float: left;
     width: 140px;
     height: 180px;
     padding: 5px;
-    margin: auto;
+    margin: 40px;
     display: inline-block;
     border-radius: 8px;
     background:   grey;
     transition: 0.5s all ease-in-out;
-    position: relative; bottom: 350px; left: 200px;
+    position: relative; bottom: 550px; left: 360px;
 }
 #item-card img{
     width: 80px;
@@ -83,7 +142,7 @@ h1 {
     font-weight: 600;
     color: whitesmoke;
     font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Lato;
 }
 #item-price{
     margin: 0;
