@@ -38,24 +38,32 @@
   <div id="Kundkorg">Kundkorg</div>
   <div id="box" style="width:200px;height:540px;border:1px solid #000;">
     <div id="slot1" value="0" style="width:200px;height:178px;border:1px solid #000;">
-      <form id="form1">
-        <input id="number1" value="0"/>
-        <input type="button" onclick="test1()" value="Lägg till" id="knapp1" />
-     </form>
+      <div class="container2" id="count3">
+        <p id="computerScore2">3</p>
+        <i class="fa-solid fa-arrow-up" id="arrowup2" onclick="up2()"></i>
+        <i class="fa-solid fa-arrow-down" id="arrowdown2" onclick="down2()"></i>
+      </div>
     </div>
+
     <div id="slot2" style="width:200px;height:178px;border:1px solid #000;">
-      <form id="form2">
-        <input id="number2" value="0"/>
-        <input type="button" onclick="test2()" value="Lägg till" id="knapp2" />
-     </form>
+      <div class="container" id="count2">
+        <p id="computerScore3" >5</p>
+        <i class="fa-solid fa-arrow-up" id="arrowup3" onclick="up3()"></i>
+        <i class="fa-solid fa-arrow-down" id="arrowdown3" onclick="down3()"></i>
+        <img id="whopp" src="Images\WHOPPER.jpg">
+        <p id="val2">whopper</p>
+      </div> 
     </div>
-    <div id="slot3" value="0" style="width:200px;height:179px;border:1px solid #000;"></div>
     
-    <form id="form3">
-      <input id="number" value="0"/>
-      <input type="button" onclick="test3()" value="Lägg till" id="knapp3" />
-    </form> 
-     
+    <div id="slot3" value="0" style="width:200px;height:179px;border:1px solid #000;"></div>
+    <div class="container" id="count1">
+      <p id="computerScore">1</p>
+      <i class="fa-solid fa-arrow-up" id="arrowup" onclick="up()"></i>
+      <i class="fa-solid fa-arrow-down" id="arrowdown" onclick="down()"></i>
+      <img id="pomm" src="Images\mcd-pommes.jpg">
+      <p id="val1">Mc-Pommes</p> 
+    </div>
+
     
   </div>
     <div id="mat">
@@ -77,7 +85,7 @@
         <div id="menykort">
           <p id="mcmeny">McDonald's Meny</p>
           <img id="mc-burgare" src="Images\mcd-burgare.jpg" onclick=test()>
-          <img id="mc-pommes" src="Images\mcd-pommes.jpg">
+          <img id="mc-pommes" src="Images\mcd-pommes.jpg" onclick="hidecount1()">
           <img id="mc-läsk" src="Images\mcd-läsk.jpg">
           <p id="mcd-burgare">Mc-Feast</p>
           <p id="mcd-pommes">Mc-pommes</p>
@@ -126,7 +134,7 @@
       <div id="meny3">
         <div id="menykort3">
           <p id="BKmeny">BK Meny</p>
-          <img id="BK-burgare" src="Images\WHOPPER.jpg" onclick=test()>
+          <img id="BK-burgare" src="Images\WHOPPER.jpg" onclick=hidecount3()>
           <img id="BK-pommes" src="Images\BK-pommes.jpg">
           <img id="BK-läsk" src="Images\mcd-läsk.jpg">
           <p id="BKburgare">BK Whopper</p>

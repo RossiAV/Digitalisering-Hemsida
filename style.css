@@ -282,6 +282,103 @@ h1 {
 
 }
 
+#computerScore{
+    font-size: 40px;
+    padding: 1px;
+    position: relative; left: 110px; bottom: 150px;
+    color: red;
+}
+
+#arrowup{
+    cursor: pointer;
+    padding: 1px;
+    position: absolute; bottom: 85px; left: 150px;
+}
+
+#arrowdown{
+    cursor: pointer;
+    padding: 1px;
+    position: absolute; bottom: 65px; left: 150px;
+}
+
+#computerScore2{
+    font-size: 40px;
+    padding: 1px;
+    position: relative; left: 110px; bottom: -205px;
+    color: blue;
+}
+
+#arrowup2{
+    cursor: pointer;
+    padding: 1px;
+    position: absolute; bottom: 270px; left: 150px;
+}
+
+#arrowdown2{
+    cursor: pointer;
+    padding: 1px;
+    position: absolute; bottom: 250px; left: 150px;
+}
+
+#computerScore3{
+    font-size: 40px;
+    padding: 1px;
+    position: relative; left: 110px; bottom: 160px;
+    color: green;
+}
+
+#arrowup3{
+    cursor: pointer;
+    padding: 1px;
+    position: absolute; bottom: 450px; left: 150px;
+}
+
+#arrowdown3{
+    cursor: pointer;
+    padding: 1px;
+    position: absolute; bottom: 430px; left: 150px;
+}
+#count1{
+    visibility: hidden;
+}
+#count2{
+    visibility: visible;
+}
+#count3{
+    visibility: hidden;
+}
+#pomm{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    display: block;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+    position: absolute; bottom: 60px; left: 10px    ;
+}
+#val1{
+    position: absolute; bottom: 130px; left: 50px;
+
+}
+#whopp{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    display: block;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+    position: absolute; bottom: 240px; left: 10px    ;
+}
+#val2{
+    position: absolute; bottom: 300px; left: 50px;
+}
+
+
+
+
+
+
+
 
 
 

@@ -3,10 +3,16 @@ let test = () => {
     let ele = document.getElementById('slot3');
     ele.innerHTML += 'Max Pommes';
     document.getElementById("form3").style.left = '-700px';
-
-
 }
-
+function hidecount1(){
+    document.getElementById('count1').style.visibility = "visible";
+}
+function hidecount2(){
+    document.getElementById('count2').style.visibility = "visible";
+}
+function hidecount3(){
+    document.getElementById('count3').style.visibility = "visible";
+}
 
 function test1(){
     var value = parseInt(document.getElementById('number1').value, 10);
@@ -58,21 +64,40 @@ function hidetest3() {
       x.style.display = "none";
     }
   }
-/*
-function test(){
-    document.getElementById("box").innerHTML="<img src='Images/MaxPommes.png' />";
-    document.getElementById("box").textContent= 'Max pommes' ;
+
+  function up() {
+    var computerScore = document.getElementById('computerScore');
+    var number = computerScore.innerHTML;
+    number++;
+    computerScore.innerHTML = number;
 }
-*/
-
-
-
-/*function test() {
-    var item = document.getElementById("donk");
-     var list = document.getElementById("box");
-    var clonedItem = item.cloneNode(true);
-    list.appendChild(clonedItem);
+function down() {
+    var computerScore = document.getElementById('computerScore');
+    var number = computerScore.innerHTML;
+    number--;
+    computerScore.innerHTML = number;
 }
-for(var i = 0; i < 5; i++) {
-    cloneItem();
-  }*/
+function up2() {
+    var computerScore2 = document.getElementById('computerScore2');
+    var number = computerScore2.innerHTML;
+    number++;
+    computerScore2.innerHTML = number;
+}
+function down2() {
+    var computerScore2 = document.getElementById('computerScore2');
+    var number = computerScore2.innerHTML;
+    number--;
+    computerScore2.innerHTML = number;
+}
+function up3() {
+    var computerScore3 = document.getElementById('computerScore3');
+    var number = computerScore3.innerHTML;
+    number++;
+    computerScore3.innerHTML = number;
+}
+function down3() {
+    var computerScore3 = document.getElementById('computerScore3');
+    var number = computerScore3.innerHTML;
+    number--;
+    computerScore3.innerHTML = number;
+}
