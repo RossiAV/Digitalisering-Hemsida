@@ -1,28 +1,63 @@
 let test = () => {
-    document.getElementById("slot2").innerHTML="<img src='Images/MaxPommes.png' />";
-    let ele = document.getElementById('slot2');
+    document.getElementById("slot3").innerHTML="<img src='Images/MaxPommes.png' />";
+    let ele = document.getElementById('slot3');
     ele.innerHTML += 'Max Pommes';
+    document.getElementById("form3").style.left = '-700px';
+
+
 }
 
-document.getElementById("MaxHamburgare").onclick = function () {
-    var div = document.createElement('div');
-       div.style.backgroundColor = "black";
-       div.style.position = "absolute";
-       div.style.left = "575px";
-       div.style.bottom = "325px";
-       div.style.height = "10px";
-       div.style.width = "10px";
 
-       document.getElementsByTagName('body')[0].appendChild(div);
-};
-
-function test2(){
-    var value = parseInt(document.getElementById('number').value, 10);
+function test1(){
+    var value = parseInt(document.getElementById('number1').value, 10);
     value = isNaN(value) ? 0 : value;
     value++;
-    document.getElementById('number').value = value;
+    document.getElementById('number1').value = value;
 
 }
+
+function test2(){
+    var value = parseInt(document.getElementById('number2').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number2').value = value;
+
+}
+
+function test3(){
+    var value = parseInt(document.getElementById('number3').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number3').value = value;
+
+}
+
+function hidetest() {
+    var x = document.getElementById("meny1");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  
+function hidetest2() {
+    var x = document.getElementById("meny2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+    
+function hidetest3() {
+    var x = document.getElementById("meny3");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
 /*
 function test(){
     document.getElementById("box").innerHTML="<img src='Images/MaxPommes.png' />";
