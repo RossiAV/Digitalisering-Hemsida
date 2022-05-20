@@ -11,11 +11,8 @@
     <body>
       <h1>Welcome to DroneFood Inc.</h1>
       <h2>Write your address and choose what you would like to eat today!</h1>
-      <input type="text" id="Adress" name="Adress">
+      <input type="text" id="Adress" name="Adress" onkeydown="saveadress()">
       <a href="map.html">
-        <!-- <button class="GFG">
-            Home
-        </button> -->
       </a>
 
 
@@ -26,19 +23,21 @@
   <div id="box" style="width:200px;height:540px;border:1px solid #000;">
     <div id="slot1" value="0" style="width:200px;height:178px;border:1px solid #000;">
       <div class="container2" id="count3">
-        <p id="computerScore2">3</p>
+        <p id="computerScore2">1</p>
         <i class="fa-solid fa-arrow-up" id="arrowup2" onclick="up2()"></i>
         <i class="fa-solid fa-arrow-down" id="arrowdown2" onclick="down2()"></i>
+        <img id="whopp" src="Images\WHOPPER.jpg">
+        <p id="val2">whopper</p>
       </div>
     </div>
 
     <div id="slot2" style="width:200px;height:178px;border:1px solid #000;">
       <div class="container" id="count2">
-        <p id="computerScore3" >5</p>
+        <p id="computerScore3" >1</p>
         <i class="fa-solid fa-arrow-up" id="arrowup3" onclick="up3()"></i>
         <i class="fa-solid fa-arrow-down" id="arrowdown3" onclick="down3()"></i>
-        <img id="whopp" src="Images\WHOPPER.jpg">
-        <p id="val2">whopper</p>
+        <img id="maxdrink" src="Images/max-läsk.png">
+        <p id="val3">Läsk</p>
       </div> 
     </div>
     
@@ -50,6 +49,14 @@
       <img id="pomm" src="Images\mcd-pommes.jpg">
       <p id="val1">Mc-Pommes</p> 
     </div>
+
+    <div id="spåra">
+      <a href="map.html">
+        <button id="paybutton" onclick="">Spåra</button>
+      </a>
+    </div>
+
+    <p id="pris"></p>
 
     
   </div>
@@ -65,13 +72,12 @@
           <p id="item-name">Burgare</p>
           <p id="item-price">Prisklass: 2/5</p>
         </div>
-
       </div>
 
       <div id="meny1">
         <div id="menykort">
           <p id="mcmeny">McDonald's Meny</p>
-          <img id="mc-burgare" src="Images\mcd-burgare.jpg" onclick=test()>
+          <img id="mc-burgare" src="Images\mcd-burgare.jpg">
           <img id="mc-pommes" src="Images\mcd-pommes.jpg" onclick="hidecount1()">
           <img id="mc-läsk" src="Images\mcd-läsk.jpg">
           <p id="mcd-burgare">Mc-Feast</p>
@@ -96,9 +102,9 @@
       <div id="meny2">
         <div id="menykort2">
           <p id="maxmeny">Max Meny</p>
-          <img id="max-burgare" src="Images\max-burgare.png" onclick=test()>
+          <img id="max-burgare" src="Images\max-burgare.png">
           <img id="max-pommes" src="Images\MaxPommes.png">
-          <img id="max-läsk" src="Images\max-läsk.png">
+          <img id="max-läsk" src="Images\max-läsk.png" onclick="hidecount2()">
           <p id="maxburgare">Max Orginal</p>
           <p id="maxpommes">Max pommes</p>
           <p id="maxläsk">Max läsk</p>
@@ -106,7 +112,7 @@
       </div>
 
       <div id="Burger King">
-        <p id="category-name">Subway</p>
+        <p id="category-name">Burger King</p>
         <div id="item-card">
           <div id="card-top">
             <i class="fa-solid fa-star" id="rating"> 3 . 0</i>

@@ -5,7 +5,7 @@ let test = () => {
     document.getElementById("form3").style.left = '-700px';
 }
 function hidecount1(){
-    document.getElementById('count1').style.visibility = "visible";
+    document.getElementById('count1').style.visibility = "visible ";
 }
 function hidecount2(){
     document.getElementById('count2').style.visibility = "visible";
@@ -100,4 +100,12 @@ function down3() {
     var number = computerScore3.innerHTML;
     number--;
     computerScore3.innerHTML = number;
+}
+
+function saveadress() {
+  if(event.key === 'Enter') {
+    var input = document.getElementById("Adress").value;
+    sessionStorage.setItem("toadress", input);
+    alert(input);
+  }
 }
