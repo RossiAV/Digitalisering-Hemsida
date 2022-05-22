@@ -6,12 +6,31 @@ let test = () => {
 }
 function hidecount1(){
     document.getElementById('count1').style.visibility = "visible ";
+    var pris =  document.getElementById('pay');
+    var number2 = pris.innerHTML;
+    number2 = Number(number2) + 25;
+    pris.innerHTML = number2;
 }
 function hidecount2(){
     document.getElementById('count2').style.visibility = "visible";
+    var pris =  document.getElementById('pay');
+    var number2 = pris.innerHTML;
+    number2 = Number(number2) + 20;
+    pris.innerHTML = number2;
 }
 function hidecount3(){
     document.getElementById('count3').style.visibility = "visible";
+    document.getElementById('pay').style.visibility = "visible";
+    var pris =  document.getElementById('pay');
+    var number2 = pris.innerHTML;
+    number2 = Number(number2) + 60;
+    pris.innerHTML = number2;
+}
+
+function addPrice() {
+  var pris = parseInt(document.getElementById('pay').value, 10);
+  pris = Number(pris) + 20;
+  document.getElementById('pay').value = pris;
 }
 
 function test1(){
@@ -70,36 +89,61 @@ function hidetest3() {
     var number = computerScore.innerHTML;
     number++;
     computerScore.innerHTML = number;
+    var pris =  document.getElementById('pay');
+    var number2 = pris.innerHTML;
+    number2 = Number(number2) + 25;
+    pris.innerHTML = number2;
+
 }
 function down() {
     var computerScore = document.getElementById('computerScore');
     var number = computerScore.innerHTML;
     number--;
     computerScore.innerHTML = number;
+    var pris =  document.getElementById('pay');
+    var number2 = pris.innerHTML;
+    number2 = Number(number2) - 25;
+    pris.innerHTML = number2;
 }
 function up2() {
     var computerScore2 = document.getElementById('computerScore2');
     var number = computerScore2.innerHTML;
     number++;
     computerScore2.innerHTML = number;
+    var pris =  document.getElementById('pay');
+    var number2 = pris.innerHTML;
+    number2 = Number(number2) + 60;
+    pris.innerHTML = number2;
 }
 function down2() {
     var computerScore2 = document.getElementById('computerScore2');
     var number = computerScore2.innerHTML;
     number--;
     computerScore2.innerHTML = number;
+    var pris =  document.getElementById('pay');
+    var number2 = pris.innerHTML;
+    number2 = Number(number2) - 60;
+    pris.innerHTML = number2;
 }
 function up3() {
     var computerScore3 = document.getElementById('computerScore3');
     var number = computerScore3.innerHTML;
     number++;
     computerScore3.innerHTML = number;
+    var pris =  document.getElementById('pay');
+    var number2 = pris.innerHTML;
+    number2 = Number(number2) + 20;
+    pris.innerHTML = number2;
 }
 function down3() {
     var computerScore3 = document.getElementById('computerScore3');
     var number = computerScore3.innerHTML;
     number--;
     computerScore3.innerHTML = number;
+    var pris =  document.getElementById('pay');
+    var number2 = pris.innerHTML;
+    number2 = Number(number2) - 20;
+    pris.innerHTML = number2;
 }
 
 function saveadress() {

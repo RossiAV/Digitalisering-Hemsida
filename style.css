@@ -469,7 +469,17 @@ h2 {
     position: absolute; left: 20px; bottom: -150px;
 }
 
+#pay{
+    visibility: visible;
+}
+#kr{
+    position: relative; bottom: 43px; left: 31px;
+}
+#betalruta{
+    position: absolute; right: 210px; bottom: -150px;
 
+   
+}
 
 
 
