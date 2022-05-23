@@ -82,9 +82,11 @@ object {
 }
 
 #map {
-    height: 400px;
+    position: relative; bottom: 100; 
+
+    height: 70%;
     /* The height is 400 pixels */
-    width: 100%;
+    width: 70%;
     /* The width is the width of the web page */
   }
   
@@ -97,5 +99,122 @@ object {
     
   }
 
+  #slot1{
+    width:200px;height:178px;border:1px solid #000;
+  }
+
+  #slot2{
+    width:200px;height:178px;border:1px solid #000;
+  }
+
+  #slot3{
+    width:200px;height:179px;border:1px solid #000;
+  }
+
+  #box{
+    width:200px;height:540px;border:1px solid #000;
+    position: relative; left: 1200px;
+  }
+
+  #count1{
+    visibility: hidden;
+}
+#count2{
+    visibility: hidden;
+}
+#count3{
+    visibility: hidden;
+}
+
+#whopp{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    display: block;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+    position: absolute; bottom: 580px; left: 10px    ;
+}
+
+#val2{
+    position: absolute; bottom: 640px; left: 70px;
+}
+
+#pomm{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    display: block;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+    position: absolute; bottom: 215px; left: 10px    ;
+}
+#val1{
+    position: absolute; bottom: 290px; left: 50px;
+}
 
 
+#maxdrink{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    display: block;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+    position: absolute; bottom: 390px; left: 10px    ;
+}
+
+#val3{
+    position: absolute; bottom: 465px; left: 80px;
+}
+
+#computerScore{
+    font-size: 40px;
+    padding: 1px;
+    position: relative; left: 110px; bottom: 150px;
+
+}
+
+#computerScore2{
+    font-size: 40px;
+    padding: 1px;
+    position: relative; left: 110px; bottom: -27px;
+
+}
+#computerScore3{
+    font-size: 40px;
+    padding: 1px;
+    position: relative; left: 110px; bottom: -30px;
+
+}
+
+#spåra{
+    visibility: hidden;
+}
+
+
+
+
+
+
+#drönare{
+    width: 2%; height: 5%;
+    position: absolute; left: 1050px; bottom: 350px;
+    -webkit-animation:glide 60s;
+}
+
+@-webkit-keyframes glide  {
+    from {
+       left: 650px;
+       bottom: 700px;
+    }
+    
+    to {
+       left:1050px;
+       bottom: 350px;
+ }
+}
+
+#minadress{
+    position: absolute; left: 790px; top: 130px;
+}

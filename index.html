@@ -52,7 +52,7 @@
 
     <div id="spåra">
       <a href="map.html">
-        <button id="paybutton" onclick="">Spåra</button>
+        <button id="paybutton" onclick="saveorder()">Spåra</button>
       </a>
     </div>
 
@@ -69,7 +69,7 @@
               <i class="fa-solid fa-cart-plus"></i>
           </div>
           <img id="donk" src="Images/McDonalds.jpeg" onclick=hidetest()> 
-          <p id="item-name">Burgare</p>
+          <p id="item-name">McDonalds</p>
           <p id="item-price">Prisklass: 2/5</p>
         </div>
       </div>
@@ -87,14 +87,14 @@
       </div>
 
       <div id="Max">
-        <p id="category-name"></p>
+        
         <div id="item-card">
           <div id="card-top">
             <i class="fa-solid fa-star" id="rating"> 4 . 0</i>
             <i class="fa-solid fa-cart-plus"></i>
           </div>
           <img id="MaxHamburgare" src="Images/Max.png" onclick="hidetest2()"> 
-          <p id="item-name">Burgare</p>
+          <p id="item-name">Max</p>
           <p id="item-price">Prisklass: 2/5</p>
         </div>
       </div>
@@ -112,14 +112,14 @@
       </div>
 
       <div id="Burger King">
-        <p id="category-name">Burger King</p>
+        
         <div id="item-card">
           <div id="card-top">
             <i class="fa-solid fa-star" id="rating"> 3 . 0</i>
             <i class="fa-solid fa-cart-plus"></i>
           </div>
           <img src="Images/Burger-King.png" id="sub" onclick=hidetest3()> 
-          <p id="item-name">Burgare</p>
+          <p id="item-name">Burger King</p>
           <p id="item-price">Prisklass: 2/5</p>
         </div>
       </div>
@@ -136,8 +136,9 @@
         </div>
       </div>
       <div id="betalruta">    
+        <p id="priset">Summa:</p> 
         <p id="pay">0</p> 
-        <p id="kr">kr</p>
+        <p id="kr">kr   </p>
       </div>   
       </div>
 

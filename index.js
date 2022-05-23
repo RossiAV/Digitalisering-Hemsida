@@ -150,6 +150,12 @@ function saveadress() {
   if(event.key === 'Enter') {
     var input = document.getElementById("Adress").value;
     sessionStorage.setItem("toadress", input);
-    alert(input);
+    alert("Leveransadress: " + input);
   }
 }
+function saveorder() {
+  var pageContent = document.getElementById("box").innerHTML; 
+  sessionStorage.setItem("page1content", pageContent);
+  }
+
+
