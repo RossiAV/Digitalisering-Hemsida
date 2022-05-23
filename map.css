@@ -133,11 +133,11 @@ object {
     display: block;
     transition: 0.5s all ease-in-out;
     cursor: pointer;
-    position: absolute; bottom: 580px; left: 10px    ;
+    position: absolute; bottom: 640px; left: 10px    ;
 }
 
 #val2{
-    position: absolute; bottom: 640px; left: 70px;
+    position: absolute; bottom: 710px; left: 70px;
 }
 
 #pomm{
@@ -147,10 +147,10 @@ object {
     display: block;
     transition: 0.5s all ease-in-out;
     cursor: pointer;
-    position: absolute; bottom: 215px; left: 10px    ;
+    position: absolute; bottom: 275px; left: 10px    ;
 }
 #val1{
-    position: absolute; bottom: 290px; left: 50px;
+    position: absolute; bottom: 350px; left: 50px;
 }
 
 
@@ -161,11 +161,11 @@ object {
     display: block;
     transition: 0.5s all ease-in-out;
     cursor: pointer;
-    position: absolute; bottom: 390px; left: 10px    ;
+    position: absolute; bottom: 450px; left: 10px    ;
 }
 
 #val3{
-    position: absolute; bottom: 465px; left: 80px;
+    position: absolute; bottom: 525px; left: 80px;
 }
 
 #computerScore{
@@ -218,3 +218,30 @@ object {
 #minadress{
     position: absolute; left: 790px; top: 130px;
 }
+
+#done{
+    position: absolute; right: 180px; bottom: 500px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    visibility: hidden;
+}
+
+#omw{
+    position: absolute; right: 180px; bottom: 500px;
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 38px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    visibility: visible;
+}
+    
